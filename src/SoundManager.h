@@ -17,7 +17,7 @@
 #include "Sample.h"
 
 
-class SoundManager  {
+class SoundManager: ofBaseSoundOutput  {
     
 public:
     
@@ -29,6 +29,8 @@ public:
     
     void audioRequested 	(float * input, int bufferSize, int nChannels);
     
+    
+    ofSoundStream mySoundStream;
     
     int		bufferSamples;
     
